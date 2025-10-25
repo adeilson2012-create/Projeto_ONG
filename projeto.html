@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos ONG Tempo de Acolher</title>
-    
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="imagens/ong.png" alt="idoso">
         <h1>Tempo de Acolher</h1>
         <p>Promovendo dignidade e carinho para nossos idosos</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
-        <img src="imagens/projetos.png" width="300" height="300" alt="Projetos">
-        
-        <section>
+    
+   <nav>
+        <a href="#navbar-opened" class="menu-icon">
+        <span class="material-icons">menu</span>
+    </a>
+    <div class="nav-flex" id="navbar-opened">
+        <a href="#navbar-closed" class="menu-close">
+        <span class="material-icons">close</span>
+        </a>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Seja Voluntário!</a>
+         <div class="dropdown">
+        <a href="projeto.html" class="drop-btn">Projetos</a>
+        <div class="dropdown-content">
+            <a href="#area1">Área 1: Saúde e Bem-Estar</a>
+            <a href="#area2">Área 2: Socialização e Combate à Solidão</a>
+            <a href="#area3">Área 3: Educação, Cultura e Lazer</a>
+            <a href="#area4">Área 4: Projetos Intergeracionais</a>
+            <a href="#area5">Área 5: Cidadania e Geração de Renda</a>
+        </div>
+</nav> 
+    </header>
+      <section>
+            <img src="imagens/projetos.png" width="300" height="300" alt="Projetos">
+        </section>
+        <div class="grid-container">
+    <div class="col-12">
+      
+      <div class="card-grid">
+
+        <div class="card" id="area1">
+          <div class="card-content">
             <h2>Área 1: Saúde e Bem-Estar</h2>
                 <p>O foco aqui é manter o corpo e a mente ativos, prevenindo doenças e promovendo a autonomia.</p>
                 <h3>Projeto "Corpo em Movimento":</h3>
@@ -29,8 +52,12 @@
                     <li><strong>Benefícios: </strong>Melhora o equilíbrio (prevenindo quedas), a flexibilidade, a força muscular e a saúde cardiovascular. Além disso, é um ótimo momento de socialização.</li>
                     <li><strong>Dica: </strong>Busque parcerias com educadores físicos, fisioterapeutas ou faculdades da área.</li>
                 </ul>
-        </section>
-        <section>
+        <span class="tag">Saúde</span>
+          </div>
+        </div>
+
+        <div class="card" id="area2">
+          <div class="card-content">
            <h2>Área 2: Socialização e Combate à Solidão</h2>
                 <p>A solidão é um dos maiores desafios para os idosos. Criar espaços de convivência é fundamental.</p>
                 <h3>Projeto "Tarde de Convivência":</h3>
@@ -48,8 +75,13 @@
                     <li><strong>O que é: </strong>Um programa de voluntariado onde voluntários (de qualquer idade) ligam regularmente para idosos que têm dificuldade de locomoção para conversar, saber como estão e oferecer uma escuta amiga.</li>
                     <li><strong>Benefícios: </strong>: Oferece companhia e apoio emocional para os idosos mais isolados.</li>    
                 </ul> 
-        </section>
-         <section>
+       <span class="tag">Social</span>
+            <span class="tag">Comunidade</span>
+          </div>
+        </div>
+
+        <div class="card" id="area3">
+           <div class="card-content">
            <h2>Área 3: Educação, Cultura e Lazer</h2>
                 <p>Aprender coisas novas e ter acesso à cultura mantém o idoso engajado e curioso sobre a vida.</p>
                 <h3>Projeto "Conectados na Melhor Idade": </h3>
@@ -67,8 +99,13 @@
                     <li><strong>O que é: </strong>: Organização de visitas a museus, teatros, parques, jardins botânicos ou mesmo a pontos turísticos da própria cidade.</li>
                     <li><strong>Dica: </strong>: Verifique a política de gratuidade ou meia-entrada para idosos e busque por transporte acessível.</li>    
                 </ul> 
-        </section>
-        <section>
+       <span class="tag">Educação</span>
+            <span class="tag">Cultura</span>
+          </div>
+        </div>
+
+        <div class="card" id="area4">
+           <div class="card-content">
            <h2>Área 4: Projetos Intergeracionais</h2>
                 <p>Conectar idosos com crianças e jovens é enriquecedor para todas as gerações.</p>
                 <h3>Projeto "Contadores de Histórias": </h3>
@@ -81,8 +118,13 @@
                     <li><strong>O que é: </strong>Criação de uma horta cuidada por idosos e jovens voluntários. Os alimentos cultivados podem ser usados nos lanches da própria ONG ou doados.</li>
                     <li><strong>Benefícios: </strong>: Promove o trabalho em equipe, o contato com a natureza e a troca de conhecimentos entre gerações.</li>    
                 </ul>
-        </section>
-        <section>
+        <span class="tag">Conectar</span>
+            <span class="tag">Histórias</span>
+          </div>
+        </div>
+
+        <div class="card" id="area5">
+           <div class="card-content">
            <h2>Área 5: Cidadania e Geração de Renda</h2>
                 <p>Empoderar o idoso, garantindo seus direitos e, se possível, oferecendo caminhos para uma renda complementar.</p>
                 <h3>Projeto "Direito Respeitado": </h3>
@@ -95,7 +137,11 @@
                     <li><strong>O que é: </strong>Organização de uma feira periódica onde os idosos podem vender os produtos que confeccionaram nas oficinas de artesanato ou culinária.</li>
                     <li><strong>Benefícios: </strong>: : Gera uma renda extra, eleva a autoestima e mostra à comunidade o potencial produtivo dos idosos.</li>    
                 </ul>
-        </section>
+       <span class="tag">Cidadania</span>
+            <span class="tag">Empreendedores</span>
+          </div>
+        </div>
+
         <section>
            <h2>Como Começar?</h2>
                 <ul>
@@ -105,9 +151,9 @@
                     <li><strong>4.	Divulgue:</strong>: :Use cartazes na comunidade, rádios locais, igrejas e grupos de bairro para que os idosos saibam das atividades oferecidas.</li>    
                 </ul>
         </section>
-
-
-    </header>
-    
+        </div>
+    <footer>
+    <p>&copy; 2025 ONG Tempo de Acolher. Todos os direitos reservados.</p>
+    </footer>   
 </body>
 </html>
