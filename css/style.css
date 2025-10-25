@@ -96,7 +96,33 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* Navegação com Flexbox */
+#navbar {
+  background-color: var(--color-secondary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--space-sm);
+}
 
+.nav-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.nav-flex a {
+  text-decoration: none;
+  color: var(--color-neutral-white);
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-flex a:hover {
+  color: #0c0c0b;
+  transform: scale(1.05);
+}
 
 /* Seções */
 section {
