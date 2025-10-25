@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  
+</head>
+<body>
+    <header>
+        <img src="imagens/ong.jpg" alt="idoso">
+        <h1>Tempo de Acolher</h1>
+        <p>Promovendo dignidade e carinho para nossos idosos</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="imagens/cadastro.png" width="300" height="300" alt="cadastro">
+  <h1>Formulário de Cadastro</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend><strong>Informações Pessoais</strong></legend>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
+
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento" required>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Endereço</strong></legend>
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="PE">Pernambuco</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <!-- Adicione mais estados conforme necessário -->
+      </select>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // Máscara para CPF
+    cpf.addEventListener('input', function () {
+      this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    });
+
+    // Máscara para telefone
+    telefone.addEventListener('input', function () {
+      this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{2})(\d)/, '($1) $2')
+        .replace(/(\d{4,5})(\d{4})$/, '$1-$2');
+    });
+
+    // Máscara para CEP
+    cep.addEventListener('input', function () {
+      this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{5})(\d{3})$/, '$1-$2');
+    });
+  </script>
+</body>
+</html>
