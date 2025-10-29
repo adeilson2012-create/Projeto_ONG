@@ -1,121 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <header>
-        <img src="imagens/ong.png" alt="idoso">
-        <h1>Tempo de Acolher</h1>
-        <p>Promovendo dignidade e carinho para nossos idosos</p>
+  <header>
+        <img src="imagens/ong.png" alt="idoso">
+        <h1>Tempo de Acolher</h1>
+        <p>Promovendo dignidade e carinho para nossos idosos</p>
 <nav>
-        <a href="#navbar-opened" class="menu-icon">
-        <span class="material-icons">menu</span>
-    </a>
-    <div class="nav-flex" id="navbar-opened">
-        <a href="#navbar-closed" class="menu-close">
-        <span class="material-icons">close</span>
-        </a>
-        <a href="index.html">Início</a>
-        <a href="cadastro.html">Seja Voluntário!</a>
-         <div class="dropdown">
-        <a href="projeto.html" class="drop-btn">Projetos</a>
-        <div class="dropdown-content">
-            <a href="projeto.html#area1">Área 1: Saúde e Bem-Estar</a>
-            <a href="projeto.html#area2">Área 2: Socialização e Combate à Solidão</a>
-            <a href="projeto.html#area3">Área 3: Educação, Cultura e Lazer</a>
-            <a href="projeto.html#area4">Área 4: Projetos Intergeracionais</a>
-            <a href="projeto.html#area5">Área 5: Cidadania e Geração de Renda</a>
-        </div>
+        <a href="#navbar-opened" class="menu-icon">
+        <span class="material-icons">menu</span>
+    </a>
+    <div class="nav-flex" id="navbar-opened">
+        <a href="#navbar-closed" class="menu-close">
+        <span class="material-icons">close</span>
+        </a>
+        <a href="index.html">Início</a>
+        <a href="cadastro.html">Seja Voluntário!</a>
+         <div class="dropdown">
+        <a href="projeto.html" class="drop-btn">Projetos</a>
+        <div class="dropdown-content">
+            <a href="projeto.html#area1">Área 1: Saúde e Bem-Estar</a>
+            <a href="projeto.html#area2">Área 2: Socialização e Combate à Solidão</a>
+            <a href="projeto.html#area3">Área 3: Educação, Cultura e Lazer</a>
+            <a href="projeto.html#area4">Área 4: Projetos Intergeracionais</a>
+            <a href="projeto.html#area5">Área 5: Cidadania e Geração de Renda</a>
+        </div>
 </nav> 
 
-  </header>
-    <section>
-    <img src="imagens/cadastro.png" width="300" height="300" alt="cadastro">
-    </section>
-    <div class="grid-container">
-  <div class="col-12">
-    <div class="alert alert-danger">
-      Por favor, preencha todos os campos.
-    </div>
-  </div>
+  </header>
+    <section>
+    <img src="imagens/cadastro.png" width="300" height="300" alt="cadastro">
+    </section>
+    <div class="grid-container">
+  <div class="col-12">
+    <div class="alert alert-danger">
+      Por favor, preencha todos os campos.
+    </div>
+  </div>
 </div>
-  <h1>Formulário de Cadastro</h1>
-  <form action="#" method="post">
-    <fieldset>
-      <legend><strong>Informações Pessoais</strong></legend>
-      <label for="nome">Nome Completo:</label>
-      <input type="text" id="nome" name="nome" required>
+  <h1>Formulário de Cadastro</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend><strong>Informações Pessoais</strong></legend>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
 
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
 
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" placeholder="(00) 00000-0000">
 
-      <label for="nascimento">Data de Nascimento:</label>
-      <input type="date" id="nascimento" name="nascimento" required>
-    </fieldset>
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento" required>
+    </fieldset>
 
-    <fieldset>
-      <legend><strong>Endereço</strong></legend>
-      <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" name="endereco" required>
+    <fieldset>
+      <legend><strong>Endereço</strong></legend>
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
 
-      <label for="cep">CEP:</label>
-      <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000">
 
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" name="cidade" required>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
 
-      <label for="estado">Estado:</label>
-      <select id="estado" name="estado" required>
-        <option value="">Selecione</option>
-        <option value="PE">Pernambuco</option>
-        <option value="PB">Paraíba</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="SP">São Paulo</option>
-        <option value="RJ">Rio de Janeiro</option>
-      </select>
-    </fieldset>
+       <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PB">Paraíba</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
+    </fieldset>
 
-    <button type="submit">Enviar</button>
-  </form>
-
-  <script>
-    // Máscara para CPF
-    cpf.addEventListener('input', function () {
-      this.value = this.value
-        .replace(/\D/g, '')
-        .replace(/(\d{3})(\d)/, '$1.$2')
-        .replace(/(\d{3})(\d)/, '$1.$2')
-        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-    });
-
-    // Máscara para telefone
-    telefone.addEventListener('input', function () {
-      this.value = this.value
-        .replace(/\D/g, '')
-        .replace(/(\d{2})(\d)/, '($1) $2')
-        .replace(/(\d{4,5})(\d{4})$/, '$1-$2');
-    });
-
-    // Máscara para CEP
-    cep.addEventListener('input', function () {
-      this.value = this.value
-        .replace(/\D/g, '')
-        .replace(/(\d{5})(\d{3})$/, '$1-$2');
-    });
-  </script>
+    <button type="submit">Enviar</button>
+  </form>
   <footer>
-    <p>&copy; 2025 ONG Tempo de Acolher. Todos os direitos reservados.</p>
-  </footer>
+        <p>&copy; 2025 Amicão - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
